@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Sign Up</title>
+</head>
+<body>
+
+    <header>
+        <section id="sec-header">
+            <div class="logo">
+                <a href="../index.html"><img src="../img/logo.png" alt=""></a>
+                <a href="../index.html">La Golondrina</a>
+            </div>
+
+            <div class="ingresar">
+                <a href=""> <img id="login-img" src="../img/usuario.png" alt=""> </a>
+            
+                <a id="open-login" class="enter-user" href=""> <p>Ingresar</p> </a>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section class="sign-up">
+            <div class="sign-up-content">
+                <p>Completa los datos para crear tu cuenta</p>
+            </div>
+            <div class="personal-information">
+                <p>Datos personales</p>
+                <div class="name">
+                    <label class="label-form" for="nombre">Nombre</label required>
+                    <input class="input-form" type="text" name="nombre" id="nombre" placeholder="Nombre completo">
+                    <div class="line-sign-up"></div>
+                </div>
+
+                <div class="name">
+                    <label class="label-form" for="apellido">Apellido</label required>
+                    <input class="input-form" type="text" name="apellido" id="apellido" placeholder="Apellido completo">
+                    <div class="line-sign-up"></div>
+                </div>
+
+                <div class="name">
+                    <div class="form-dni">
+                        <div class="selecion-dni">
+                        <select class="select" required>
+                            <option value="DNI">Tipo</option>
+                            <option value="1">DNI</option>
+                        </select>
+                    
+                        <label class="label-form-dni" for="numero">Número</label required>
+                        </div>
+                            <div class="dni">
+                                <input class="input-form-dni" type="tel" name="numero" id="numero" placeholder="Número DNI">
+                        <div class="line-select"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="name">
+                    <label class="label-form" for="tel">Número de teléfono</label required>
+                    <input class="input-form" type="tel" name="tel" id="tel" placeholder="Teléfono (Código de área sin el 0)">
+                    <div class="line-sign-up"></div>
+                </div>
+            </div>
+
+            <div class="account-information">
+                <p>Sobre tu cuenta</p>
+                <div class="name">
+                    <label class="label-form" for="email">Email</label required>
+                    <input class="input-form" type="email" name="email" id="email" placeholder="Email">
+                    <div class="line-sign-up"></div>
+                </div>
+
+                <div class="name">
+                    <label class="label-form" for="confirmar">Confirmar email</label required>
+                    <input class="input-form" type="email" name="confirmar" id="confirmar" placeholder="Email">
+                    <div class="line-sign-up"></div>
+                </div>
+
+                <div class="name">
+                    <label class="label-form" for="password">Contraseña (mínimo 8 caracteres)</label required>
+                    <input id="password-sing-up" class="input-form" type="password" name="password" id="password" placeholder="Contraseña">
+                    <div class="line-sign-up"></div>
+                </div>
+
+                <div class="name">
+                    <label class="label-form" for="confpassword">Contraseña</label required>
+                    <input id="repeat-password-sing-up" class="input-form" type="password" name="confpassword" id="confpassword" placeholder="Repetir contraseña">
+                    <div class="line-sign-up"></div>
+                </div>
+            </div>
+
+            <div class="sign-up-tyc">
+                <p class="p-tyc"> Acepto las Politicas de Privacidad Términos</p>
+                <div class="container-tyc">
+                    <p class="p-tyc2"> y Condiciones</p>
+                    <div class="checkbox-tyc"></div>
+                </div>
+            </div>
+            <div class="create-account">
+                <a id="create-account" class="button-create-account" href="">Crear cuenta</a>
+            </div>
+
+            <div id="open-sign-up" class="popup-sign-up d-none">
+                <h3>¡Felicidades!</h3>
+                <p>USTED SE HA REGISTRADO EXITOSAMENTE</p>
+                <div class="logo-popup-sign-up">
+                    <img src="../img/logo.png" alt="">
+                    <p>La Golondrina</p>
+                </div>
+                    <p>RECIBIRAS UN MAIL DE CONFIRMACION</p>
+                    <div class="button-close-sign-up">
+                <a href="../index.html"> Cerrar </a>
+            </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <aside id="footer">
+            <div class="div-footer">
+                <img class="logo-footer" src="../img/img-footer.png" alt="">
+                <p>La Golondrina</p>
+            </div>
+            <div class="deco-footer">
+
+            </div>
+
+                <div class="redes-footer">
+                    <div><img src="../img/redes/instagram.png" alt=""></div>
+                    <div><img src="../img/redes/youtube.png" alt=""></div>
+                    <div><img src="../img/redes/x.png" alt=""></div>
+                    <div><img src="../img/redes/tiktok.png" alt=""></div>
+                    <div><img src="../img/redes/facebook.png" alt=""></div>
+                </div>
+
+                <div class="texto-footer">
+                    <p>Aviso Pegal</p>
+                    <p>Politica De Privacidad</p>
+                    <p>Politica De Cookies</p>
+                </div>
+
+        </aside>
+    </footer>
+
+    <script src="../js/registrarse.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://cdn.boomcdn.com/libs/wow-js/1.3.0/wow.min.js"> </script>
+    <script>
+        new WOW().init();
+    </script>
+    
+</body>
+</html>
